@@ -44,7 +44,7 @@ ConfirmationScreen As screen:
         HoverBorderColor: =ColorFade(icon7.BorderColor, 20%)
         HoverColor: =ColorFade(icon7.Color, 20%)
         HoverFill: =icon7.Fill
-        Icon: =Icon.EmojiSmile
+        Icon: =Icon.CancelBadge
         PressedBorderColor: =ColorFade(icon7.BorderColor, -20%)
         PressedColor: =ColorFade(icon7.Color, -20%)
         PressedFill: =icon7.Fill
