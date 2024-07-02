@@ -1,0 +1,205 @@
+SideNavigation_Compact As CanvasComponent:
+    BaseIconColor: =RGBA(115,131,176,1)
+    BaseIconColor_Text: ="RGBA(115,131,176,1)"
+    CurrentMenuID: =1
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =786
+    HoverFill: =RGBA(0, 0, 0, 0.1)
+    Logo_Compact: ='6 - DARK BACKGROUND'
+    LogoPadding_Percent: =20%
+    MenuContent: |-
+        =Table(
+            {
+                MenuIcon_Selected: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-bucket-fill' viewBox='0 0 16 16'>
+          <path d='M2.522 5H2a.5.5 0 0 0-.494.574l1.372 9.149A1.5 1.5 0 0 0 4.36 16h7.278a1.5 1.5 0 0 0 1.483-1.277l1.373-9.149A.5.5 0 0 0 14 5h-.522A5.5 5.5 0 0 0 2.522 5m1.005 0a4.5 4.5 0 0 1 8.945 0z'/>
+        </svg>",
+                MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-bucket' viewBox='0 0 16 16'>
+          <path d='M2.522 5H2a.5.5 0 0 0-.494.574l1.372 9.149A1.5 1.5 0 0 0 4.36 16h7.278a1.5 1.5 0 0 0 1.483-1.277l1.373-9.149A.5.5 0 0 0 14 5h-.522A5.5 5.5 0 0 0 2.522 5m1.005 0a4.5 4.5 0 0 1 8.945 0zm9.892 1-1.286 8.574a.5.5 0 0 1-.494.426H4.36a.5.5 0 0 1-.494-.426L2.58 6h10.838z'/>
+        </svg>",
+                MenuID: 1,
+                MenuName: "Products",
+                PageNavigation: App.ActiveScreen
+            },
+            {
+                MenuIcon_Selected: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-bucket-fill' viewBox='0 0 16 16'>
+          <path d='M2.522 5H2a.5.5 0 0 0-.494.574l1.372 9.149A1.5 1.5 0 0 0 4.36 16h7.278a1.5 1.5 0 0 0 1.483-1.277l1.373-9.149A.5.5 0 0 0 14 5h-.522A5.5 5.5 0 0 0 2.522 5m1.005 0a4.5 4.5 0 0 1 8.945 0z'/>
+        </svg>",
+                MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-bucket' viewBox='0 0 16 16'>
+          <path d='M2.522 5H2a.5.5 0 0 0-.494.574l1.372 9.149A1.5 1.5 0 0 0 4.36 16h7.278a1.5 1.5 0 0 0 1.483-1.277l1.373-9.149A.5.5 0 0 0 14 5h-.522A5.5 5.5 0 0 0 2.522 5m1.005 0a4.5 4.5 0 0 1 8.945 0zm9.892 1-1.286 8.574a.5.5 0 0 1-.494.426H4.36a.5.5 0 0 1-.494-.426L2.58 6h10.838z'/>
+        </svg>",
+                MenuID: 2,
+                MenuName: "Appointments",
+                PageNavigation: App.ActiveScreen
+            },
+            {
+                MenuIcon_Selected: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-bucket-fill' viewBox='0 0 16 16'>
+          <path d='M2.522 5H2a.5.5 0 0 0-.494.574l1.372 9.149A1.5 1.5 0 0 0 4.36 16h7.278a1.5 1.5 0 0 0 1.483-1.277l1.373-9.149A.5.5 0 0 0 14 5h-.522A5.5 5.5 0 0 0 2.522 5m1.005 0a4.5 4.5 0 0 1 8.945 0z'/>
+        </svg>",
+                MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-bucket' viewBox='0 0 16 16'>
+          <path d='M2.522 5H2a.5.5 0 0 0-.494.574l1.372 9.149A1.5 1.5 0 0 0 4.36 16h7.278a1.5 1.5 0 0 0 1.483-1.277l1.373-9.149A.5.5 0 0 0 14 5h-.522A5.5 5.5 0 0 0 2.522 5m1.005 0a4.5 4.5 0 0 1 8.945 0zm9.892 1-1.286 8.574a.5.5 0 0 1-.494.426H4.36a.5.5 0 0 1-.494-.426L2.58 6h10.838z'/>
+        </svg>",
+                MenuID: 3,
+                MenuName: "Categories",
+                PageNavigation: App.ActiveScreen
+            }
+        )
+    NavBG: =RGBA(244, 244, 244, 1)
+    PressedFill: =RGBA(0, 0, 0, 0.2)
+    SelectedIconBG: =RGBA(255, 255, 255, 1)
+    SelectedIconColor: =RGBA(254,189,47,1)
+    SelectedIconColor_Text: ="RGBA(254,189,47,1)"
+    Width: =70
+    X: =0
+    Y: =0
+    ZIndex: =2
+
+    RootContainer As groupContainer.verticalAutoLayoutContainer:
+        Fill: =SideNavigation_Compact.NavBG
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =20
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =20
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Logo As image:
+            AlignInContainer: =AlignInContainer.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =30
+            Image: =SideNavigation_Compact.Logo_Compact
+            LayoutMinWidth: =0
+            PaddingBottom: =Self.Height * SideNavigation_Compact.LogoPadding_Percent
+            PaddingTop: =Self.Height * SideNavigation_Compact.LogoPadding_Percent
+            Width: =50
+            ZIndex: =1
+
+        MenuItem_Gallery As gallery.galleryVertical:
+            BorderColor: =App.Theme.Colors.Darker40
+            DelayItemLoading: =true
+            FillPortions: =0
+            Height: =Self.AllItemsCount * (Self.TemplateHeight + Self.TemplatePadding)
+            Items: =SideNavigation_Compact.MenuContent
+            Layout: =Layout.Vertical
+            LayoutMinHeight: =287
+            LayoutMinWidth: =0
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =50
+            ZIndex: =2
+
+            TemplateContainer As groupContainer.manualLayoutContainer:
+                Height: =Parent.TemplateHeight
+                Width: =Parent.TemplateWidth
+                ZIndex: =1
+
+                CustomBtnContainer As groupContainer.manualLayoutContainer:
+                    Fill: |-
+                        =If(
+                            SideNavigation_Compact.CurrentMenuID = ThisItem.MenuID,
+                            SideNavigation_Compact.SelectedIconBG,
+                            RGBA(
+                                0,
+                                0,
+                                0,
+                                0
+                            )
+                        )
+                    Height: =Parent.Height * 70%
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Width: =Self.Height
+                    X: =(Parent.Width - Self.Width)/2
+                    Y: =(Parent.Height - Self.Height)/2
+                    ZIndex: =1
+
+                    MenuIconImage As image:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Height: =Parent.Height
+                        Image: |-
+                            ="data:image/svg+xml;utf8, " & EncodeUrl(
+                                Substitute(
+                                If(
+                                    SideNavigation_Compact.CurrentMenuID = ThisItem.MenuID,
+                                    ThisItem.MenuIcon_Selected,
+                                    ThisItem.MenuIcon
+                                ),
+                                "currentColor",
+                                If(
+                                    SideNavigation_Compact.CurrentMenuID = ThisItem.MenuID,
+                                    SideNavigation_Compact.SelectedIconColor_Text,
+                                    SideNavigation_Compact.BaseIconColor_Text
+                                )
+                            )
+                            )
+                        PaddingBottom: =8
+                        PaddingTop: =8
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    Button15 As button:
+                        BorderColor: =
+                        BorderStyle: =BorderStyle.None
+                        Color: =RGBA(0, 0, 0, 0)
+                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Font: =App.Theme.Font
+                        Height: =Parent.Height
+                        HoverBorderColor: =App.Theme.Colors.Darker10
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =SideNavigation_Compact.HoverFill
+                        OnSelect: =Navigate(ThisItem.PageNavigation)
+                        PressedBorderColor: =App.Theme.Colors.Darker40
+                        PressedColor: =Self.Color
+                        PressedFill: =SideNavigation_Compact.PressedFill
+                        Text: =
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+        ProfileContainer As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Center
+            FillPortions: =0
+            Height: =40
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =40
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =5
+            PaddingRight: =5
+            Width: =40
+            ZIndex: =3
+
+            Container3 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                FillPortions: =0
+                Height: =Self.Width
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Width: =35
+                ZIndex: =1
+
+                Image6 As image:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =Parent.Height
+                    Image: =User().Image
+                    Width: =Parent.Width
+                    ZIndex: =1
+

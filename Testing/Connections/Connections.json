@@ -1,0 +1,67 @@
+{
+  "177c5454-dfbb-4a45-b731-44a44718f323": {
+    "appActions": [
+      "GetRoomLists",
+      "GetRooms",
+      "CalendarGetTables",
+      "GetEventsCalendarViewV2",
+      "FindMeetingTimes",
+      "GetRoomsInRoomList",
+      "V2CalendarPostItem",
+      "V2CalendarPatchItem"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1686/1.0.1686.3706/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "177c5454-dfbb-4a45-b731-44a44718f323"
+  },
+  "75babe3b-2d40-4689-827f-62c5a6fe740a": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1686/1.0.1686.3706/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "75babe3b-2d40-4689-827f-62c5a6fe740a"
+  },
+  "c2cc55f3-9620-47e5-a551-6fd0e9ba33bb": {
+    "appActions": [
+      "MyProfile"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1694/1.0.1694.3753/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "c2cc55f3-9620-47e5-a551-6fd0e9ba33bb"
+  }
+}
