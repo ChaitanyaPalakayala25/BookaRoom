@@ -322,7 +322,7 @@ RoomSelectScreen As screen:
         Color: =RGBA(42, 67, 90, 1)
         FocusedBorderColor: =Label7.BorderColor
         FontWeight: =FontWeight.Bold
-        Height: =48
+        Height: =153
         HoverBorderColor: =Label7.BorderColor
         HoverColor: =Label7.Color
         HoverFill: =Label7.Fill
@@ -332,11 +332,11 @@ RoomSelectScreen As screen:
         PressedColor: =Label7.Color
         PressedFill: =Label7.Fill
         Size: =14
-        Text: =If(ShowLoading, "Gathering available rooms...", "There are no rooms available")
+        Text: =If(ShowLoading, "Gathering available rooms...", "There are no rooms available, Better luck next time")
         Visible: =!RoomsGallery.Visible
-        Width: =274
-        X: =721
-        Y: =396
+        Width: =364
+        X: =703
+        Y: =365
         ZIndex: =10
 
     Rectangle6 As rectangle:
